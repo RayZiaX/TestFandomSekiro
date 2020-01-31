@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /img  #bloque l'indexation des images pour les robots
+Sitemap: http://localhost/Fandom_Sekiro/sitemap.xml

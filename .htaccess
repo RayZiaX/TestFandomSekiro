@@ -1,0 +1,30 @@
+<files ~ “^.*\.([Hh][Tt][Aa])”>
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+ErrorDocument 404 /sekiro/not-found-page.html
+
+#Prevent directory browsing in .htaccess
+Options All -Indexes
+
+#Disable HTTP Track & Trace
+RewriteEngine on
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+RewriteRule .* - [F]
+
+# Security Headers
+<IfModule mod_headers.c>
+Header set Cache-Control "max-age=300, public"
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "same-origin"
+Header set Feature-Policy "geolocation 'self'; vibrate 'none'"
+</IfModule>
