@@ -11,14 +11,14 @@
     padding: 0;
     text-align: center;
 }
-body{
-    background-color: #000 !important;
-    color: white;
-	text-shadow: 0 1px 0 #ffffff;
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/wallpapersden.com_sekiro-art_1920x1080.jpg);
     margin: 0;
-    font-family:'Open Sans', Arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    background-repeat: repeat;
+    font-family:Arial, sans-serif;
+    color: white;
 }
 section{
     display: block;
@@ -29,13 +29,7 @@ section{
     background-color: #696969;
     position: relative;
 }
-header{
-    margin-left: 15% !important;
-    margin-right: 15% !important;
-    padding-left: 2.5% !important;
-    padding-right: 2.5% !important;
-    background-color: #696969 !important;
-}
+
 aside#autre{
     display: block;
 }
@@ -49,3 +43,44 @@ h2.title{
 aside#autre>img{
     /* height: 400px; */
 }
+h1{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0%;
+}
+h2,h3{
+    margin: 0%;
+}
+
+
+/* début partie header */
+header {
+    background-color: gray;
+    margin: 0% 15%;
+    height: 10%;
+}
+
+div.img {
+    float: left;
+    margin: 15px;
+    margin-right: 0%;
+}
+
+header div.text {
+    display: flex;
+}
+
+header span {
+    font-size: 20px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    flex: 1;
+    height: 40px;
+}
+
+header div.container {
+    display: flex;
+    margin: auto 0;
+}
+/* fin partie header */

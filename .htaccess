@@ -9,7 +9,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
-ErrorDocument 404 /sekiro/not-found-page.html
+ErrorDocument 404 /fandom_sekiro/not-found-page.html
 
 #Prevent directory browsing in .htaccess
 Options All -Indexes
@@ -19,6 +19,8 @@ RewriteEngine on
 RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
 RewriteRule .* - [F]
 
+
+# decommenter cette ligne pour httpdconf d'apache LoadModule headers_module modules/mod_headers.so pour la securité
 # Security Headers
 <IfModule mod_headers.c>
 Header set Cache-Control "max-age=300, public"

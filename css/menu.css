@@ -8,25 +8,9 @@ www.freshdesignweb.com
 /* === fontawesome === */
 @import url('font-awesome.css');
 /* === custom icon === */
-body {
-  margin: 0;
-  font-family:'Open Sans', Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #696969;
-}
+
 .bold {
 	font-weight:900;
-}
-
-/* --- header -- */
-header{
-	background: url(../img/header-pattern-150.png) repeat;
-	margin:0;
-	padding:0 0 20px;
-	position:relative;
-	z-index:2000;
 }
 
 /* --- menu --- */
@@ -374,7 +358,7 @@ border-top:none;
 @media (min-width: 1200px) {
   .container,
   .navbar-static-top .container{
-    width: 1170px;
+    width: 1085px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
