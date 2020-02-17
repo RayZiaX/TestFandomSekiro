@@ -11,16 +11,18 @@
     padding: 0;
     text-align: center;
 }
+
 body {
     height: 100vh;
     width: 100vw;
     background-image: url(../img/wallpapersden.com_sekiro-art_1920x1080.jpg);
     margin: 0;
     background-repeat: repeat;
-    font-family:Arial, sans-serif;
+    font-family: Arial, sans-serif;
     color: white;
 }
-section{
+
+section {
     display: block;
     margin-left: 15%;
     margin-right: 15%;
@@ -30,26 +32,32 @@ section{
     position: relative;
 }
 
-aside#autre{
+aside#autre {
     display: block;
 }
-h2.title{
+
+h2.title {
     background-color: gold;
     color: black;
     font-size: 2rem;
     font-weight: bold;
 
 }
-aside#autre>img{
-    /* height: 400px; */
-}
-h1{
+
+/* aside#autre>img{
+    height: 400px; 
+}*/
+h1 {
     font-weight: bold;
     font-size: 2rem;
     margin: 0%;
+    display: inline;
 }
-h2,h3{
+
+h2,
+h3 {
     margin: 0%;
+    margin-top: 5px;
 }
 
 
@@ -83,4 +91,137 @@ header div.container {
     display: flex;
     margin: auto 0;
 }
+
 /* fin partie header */
+/* debut de la partie section */
+section {
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #696969;
+    position: relative;
+}
+
+article .text{
+    line-height: 1.5rem;
+}
+
+article.intro {
+    position: relative;
+}
+
+aside div.sekiro {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+}
+
+aside {
+    display: block;
+    float: right;
+}
+
+iframe {
+    width: 300px;
+    height: 400px;
+}
+
+/* fin de la partie section */
+/* début de la galerie*/
+div.galerie_presentation {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+
+}
+
+div#galerie div#content
+{
+    display: block;
+    text-align: center;
+    margin: 0 20%;
+}
+
+div.sekiro img
+{
+    height: 400px;
+    width: 300px;
+}
+
+div img.galerie_img {
+    margin: 3px;
+}
+
+div div.content {
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px;
+
+}
+
+div.content span.description {
+    align-self: center;
+    text-align: center;
+    background-color: #696969;
+    width: 100%;
+}
+@media (max-width: 1025px)
+{
+    iframe{
+        display: none;
+    }
+    html{
+        font-size: 100%;
+    }
+    header{
+        margin: 0%;
+    }
+
+    header div.img{
+        height: 25%;
+        width: 25%;
+    }
+
+    section{
+        margin: 0%;
+    }
+    aside
+    {
+        display: none;
+    }
+    footer{
+        margin: 0%;
+    }   
+}
+@media (max-width: 600px)
+{  
+    iframe{
+        display: none;
+    }
+    html{
+        font-size: 100%;
+    }
+    header{
+        margin: 0%;
+    }
+
+    header div.img{
+        height: 50%;
+        width: 50%;
+    }
+    section{
+        margin: 0%;
+    }
+    aside
+    {
+        display: none;
+    }
+    footer{
+        margin: 0%;
+    }
+}
